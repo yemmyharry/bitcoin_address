@@ -29,7 +29,7 @@ func main() {
 
 func createP2PKHAddress() {
 	network := &chaincfg.TestNet3Params
-	privKey, err := btcec.NewPrivateKey(btcec.S256())
+	privKey, err := btcec.NewPrivateKey()
 	if err != nil {
 		log.Fatal(err)
 	}
